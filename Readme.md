@@ -1,18 +1,20 @@
-- 1ere chose à faire dans un nouveau dossier de travail :
-- git init 
-- Ca permet d'initialiser GIT dans le dossier actuel.
+### Étapes pour utiliser GIT
 
-2eme chose : 
-- git add .
-- Permet d'ajouter toutes les modifications faites depuis la dernière version (ou toutes les modifs si aucune version) pour la prochaine version.
+#### 1. Initialisation du dossier GIT
 
-3 eme chose :
-- git commit -m "Message de version"
-- Va créer une nouvelle version avec comme nom de version le message apres le -m
+* Exécutez la commande `git init` pour initialiser GIT dans le dossier actuel (une seule fois puis plus jamais besoin pour ce dossier de travail).
 
-Si ça n'as pas encore été fait :
-- git remote add origin urlDuRepoGithub
+#### 2. Ajout des modifications pour la prochaine version
 
-4 eme chose :
-- git push -u origin main (puis git push tout court pour les prochaines fois)
-Permet d'envoyer nos versions chez github.com
+* Exécutez la commande `git add .` pour ajouter toutes les modifications faites depuis la dernière version (ou toutes les modifs si aucune version) pour la prochaine version.
+
+#### 3. Création d'une nouvelle version
+
+* Exécutez la commande `git commit -m "Message de version"` pour créer une nouvelle version avec comme nom de version le message apres le `-m`.
+
+#### 4. Envoi des versions sur github.com
+
+* Si vous n'avez pas déjà ajouté le repository distant :
+	+ Exécutez la commande `git remote add origin urlDuRepoGithub`.
+* Pour envoyer vos versions sur github.com :
+	+ Exécutez la commande `git push -u origin main` (puis `git push` tout court pour les prochaines fois).
